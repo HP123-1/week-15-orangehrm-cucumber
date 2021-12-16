@@ -1,0 +1,267 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18361309600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "user should navigate to employee leave page successfully",
+        "description": "",
+        "id": "orangehrm-leave-test;user-should-navigate-to-employee-leave-page-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 1388974800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 291363100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on home page",
+            "match": {
+              "location": "LeaveSteps.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 259746900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter username \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 18
+                }
+              ],
+              "location": "LeaveSteps.iEnterUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 151817800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 18
+                }
+              ],
+              "location": "LeaveSteps.iEnterPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2473415000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on login button",
+            "match": {
+              "location": "LeaveSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22172503200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on leave list",
+            "match": {
+              "location": "LeaveSteps.iClickOnLeaveList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74304500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify employee \"Show Leave with Status\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Show Leave with Status",
+                  "offset": 17
+                }
+              ],
+              "location": "LeaveSteps.verifyEmployeeText(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Orangehrm Leave Test",
+    "description": "As a user I want to navigate to login page successfully",
+    "id": "orangehrm-leave-test",
+    "keyword": "Feature",
+    "uri": "leave.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6202767600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "user should navigate to login page successfully",
+        "description": "",
+        "id": "orangehrm-login-test;user-should-navigate-to-login-page-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 1523132000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 46600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on home page",
+            "match": {
+              "location": "LeaveSteps.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 208820200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter username \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 18
+                }
+              ],
+              "location": "LeaveSteps.iEnterUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 274986600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 18
+                }
+              ],
+              "location": "LeaveSteps.iEnterPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2418176000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on login button",
+            "match": {
+              "location": "LeaveSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 799876800,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cWelcome [Paul]\u003e but was:\u003cWelcome [sdzfasf]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.orangelive.demo.opensource.cucumber.steps.LoginSteps.iShouldSeeTheText(LoginSteps.java:18)\r\n\tat ✽.Then I should see the \"Welcome sdzfasf\" text(login.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I should see the \"Welcome sdzfasf\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome sdzfasf",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginSteps.iShouldSeeTheText(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Orangehrm Login Test",
+    "description": "As a user I want to navigate to login page successfully",
+    "id": "orangehrm-login-test",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
